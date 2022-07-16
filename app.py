@@ -35,6 +35,10 @@ ax4.set_xlabel('Weight', fontsize=15)
 ax4.set_ylabel('Body Fat', fontsize=15)
 ax4.set_title('Weight and Body Fat scatter plot')
 plt.show()
-
-# c=np.corrcoef(df.Age, df.BodyFat)
-# print(c)
+fig, ax5 = plt.subplots()
+m= df.Height
+ax5.scatter(m,y)
+ax5.set_xlabel('Height', fontsize=15)
+ax5.set_ylabel('Body Fat', fontsize=15)
+ax5.set_title('Height and Body Fat scatter plot')
+plt.show()
